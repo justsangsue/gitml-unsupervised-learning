@@ -1,0 +1,67 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.SimpleKMeans -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 2 -A "weka.core.EuclideanDistance -R first-last" -I 500 -num-slots 1 -S 10
+Relation:     mydata-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    1338
+Attributes:   12
+              age
+              bmi
+              children
+              sex_male
+              sex_female
+              smoker_yes
+              smoker_no
+              region_northeast
+              region_southwest
+              region_southeast
+              region_northwest
+              charges
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+
+kMeans
+======
+
+Number of iterations: 4
+Within cluster sum of squared errors: 1923.1054830657783
+
+Initial starting points (random):
+
+Cluster 0: 35,27.74,2,1,0,1,0,1,0,0,0,20984.0936
+Cluster 1: 35,17.86,1,1,0,0,1,0,0,0,1,5116.5004
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                                Cluster#
+Attribute           Full Data          0          1
+                     (1338.0)    (274.0)   (1064.0)
+===================================================
+age                    39.207    38.5146    39.3853
+bmi                   30.6634    30.7084    30.6518
+children               1.0949     1.1131     1.0902
+sex_male               0.5052     0.5803     0.4859
+sex_female             0.4948     0.4197     0.5141
+smoker_yes             0.2048          1          0
+smoker_no              0.7952          0          1
+region_northeast       0.2422     0.2445     0.2415
+region_southwest       0.2429     0.2117     0.2509
+region_southeast        0.272     0.3321     0.2566
+region_northwest       0.2429     0.2117     0.2509
+charges            13270.4223 32050.2318  8434.2683
+
+
+
+
+Time taken to build model (full training data) : 0 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0       274 ( 20%)
+1      1064 ( 80%)
+

@@ -1,0 +1,81 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.PrincipalComponents -R 0.95 -A 5
+Search:       weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N -1
+Relation:     mydata-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    1338
+Attributes:   12
+              age
+              bmi
+              children
+              sex_male
+              sex_female
+              smoker_yes
+              smoker_no
+              region_northeast
+              region_southwest
+              region_southeast
+              region_northwest
+              charges
+Evaluation mode:    evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+
+Attribute Evaluator (unsupervised):
+	Principal Components Attribute Transformer
+
+Correlation matrix
+  1      0.11   0.04  -0.02   0.02  -0.03   0.03   0      0.01  -0.01  -0    
+  0.11   1      0.01   0.05  -0.05   0     -0     -0.14  -0.01   0.27  -0.14 
+  0.04   0.01   1      0.02  -0.02   0.01  -0.01  -0.02   0.02  -0.02   0.02 
+ -0.02   0.05   0.02   1     -1      0.08  -0.08  -0     -0      0.02  -0.01 
+  0.02  -0.05  -0.02  -1      1     -0.08   0.08   0      0     -0.02   0.01 
+ -0.03   0      0.01   0.08  -0.08   1     -1      0     -0.04   0.07  -0.04 
+  0.03  -0     -0.01  -0.08   0.08  -1      1     -0      0.04  -0.07   0.04 
+  0     -0.14  -0.02  -0      0      0     -0      1     -0.32  -0.35  -0.32 
+  0.01  -0.01   0.02  -0      0     -0.04   0.04  -0.32   1     -0.35  -0.32 
+ -0.01   0.27  -0.02   0.02  -0.02   0.07  -0.07  -0.35  -0.35   1     -0.35 
+ -0     -0.14   0.02  -0.01   0.01  -0.04   0.04  -0.32  -0.32  -0.35   1    
+
+
+eigenvalue	proportion	cumulative
+  2.17517	  0.19774	  0.19774	0.502smoker_yes-0.502smoker_no-0.481sex_female+0.481sex_male+0.13 region_southeast...
+  1.85636	  0.16876	  0.3665 	-0.514sex_female+0.514sex_male+0.478smoker_no-0.478smoker_yes-0.086region_southeast...
+  1.54182	  0.14017	  0.50667	-0.674region_southeast-0.52bmi+0.363region_northeast+0.322region_northwest-0.109smoker_no...
+  1.32278	  0.12025	  0.62692	-0.726region_southwest+0.632region_northwest+0.223region_southeast-0.138region_northeast-0.037age...
+  1.32087	  0.12008	  0.747  	-0.736region_northeast+0.462region_southwest+0.437region_northwest-0.158region_southeast+0.135children...
+  1.06522	  0.09684	  0.84384	0.761age+0.549children+0.238bmi+0.162region_northeast-0.157region_southeast...
+  0.96152	  0.08741	  0.93125	-0.825children+0.513age+0.142bmi-0.141region_southeast+0.113region_northwest...
+  0.75627	  0.06875	  1      	-0.803bmi+0.38 age+0.37 region_southeast-0.189region_northeast-0.186region_northwest...
+
+Eigenvectors
+ V1	 V2	 V3	 V4	 V5	 V6	 V7	 V8	
+-0.0323	 0.0082	-0.1012	-0.0367	 0.0226	 0.7613	 0.513 	 0.3795	age
+ 0.0784	 0.0208	-0.5204	-0.0185	 0.0019	 0.2378	 0.142 	-0.8035	bmi
+ 0.0156	 0.0182	 0.0146	-0.0132	 0.1347	 0.5485	-0.8246	 0.0099	children
+ 0.4815	 0.5144	 0.0464	 0.007 	-0.0069	-0.0054	 0.0168	 0.0314	sex_male
+-0.4815	-0.5144	-0.0464	-0.007 	 0.0069	 0.0054	-0.0168	-0.0314	sex_female
+ 0.5021	-0.478 	 0.1088	-0.0298	 0.0688	 0.0269	 0.0302	-0.0196	smoker_yes
+-0.5021	 0.478 	-0.1088	 0.0298	-0.0688	-0.0269	-0.0302	 0.0196	smoker_no
+-0.0146	-0.0136	 0.3634	-0.1376	-0.736 	 0.1619	-0.0068	-0.189 	region_northeast
+-0.0507	 0.0607	 0.0145	-0.7264	 0.4622	-0.0719	 0.0398	-0.0092	region_southwest
+ 0.1305	-0.0861	-0.6743	 0.2232	-0.1584	-0.1573	-0.141 	 0.3702	region_southeast
+-0.0701	 0.0422	 0.3222	 0.6323	 0.4374	 0.0734	 0.1133	-0.1862	region_northwest
+
+Ranked attributes:
+ 0.8022572732134309     1 0.502smoker_yes-0.502smoker_no-0.481sex_female+0.481sex_male+0.13 region_southeast...
+ 0.6334972037246775     2 -0.514sex_female+0.514sex_male+0.478smoker_no-0.478smoker_yes-0.086region_southeast...
+ 0.49333173799977004    3 -0.674region_southeast-0.52bmi+0.363region_northeast+0.322region_northwest-0.109smoker_no...
+ 0.37307912273491595    4 -0.726region_southwest+0.632region_northwest+0.223region_southeast-0.138region_northeast-0.037age...
+ 0.25300008617496883    5 -0.736region_northeast+0.462region_southwest+0.437region_northwest-0.158region_southeast+0.135children...
+ 0.1561623009730032     6 0.761age+0.549children+0.238bmi+0.162region_northeast-0.157region_southeast...
+ 0.06875166291188961    7 -0.825children+0.513age+0.142bmi-0.141region_southeast+0.113region_northwest...
+ 0.000000000000000666   8 -0.803bmi+0.38 age+0.37 region_southeast-0.189region_northeast-0.186region_northwest...
+
+Selected attributes: 1,2,3,4,5,6,7,8 : 8
+

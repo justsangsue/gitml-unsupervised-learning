@@ -1,0 +1,61 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.SimpleKMeans -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 2 -A "weka.core.EuclideanDistance -R first-last" -I 500 -num-slots 1 -S 10
+Relation:     mydata-weka.filters.unsupervised.attribute.Remove-R1_principal components-weka.filters.unsupervised.attribute.PrincipalComponents-R0.95-A5-M-1
+Instances:    1338
+Attributes:   9
+              0.502smoker_yes-0.502smoker_no-0.481sex_female+0.481sex_male+0.13 region_southeast...
+              -0.514sex_female+0.514sex_male+0.478smoker_no-0.478smoker_yes-0.086region_southeast...
+              -0.674region_southeast-0.52bmi+0.363region_northeast+0.322region_northwest-0.109smoker_no...
+              -0.726region_southwest+0.632region_northwest+0.223region_southeast-0.138region_northeast-0.037age...
+              -0.736region_northeast+0.462region_southwest+0.437region_northwest-0.158region_southeast+0.135children...
+              0.761age+0.549children+0.238bmi+0.162region_northeast-0.157region_southeast...
+              -0.825children+0.513age+0.142bmi-0.141region_southeast+0.113region_northwest...
+              -0.803bmi+0.38 age+0.37 region_southeast-0.189region_northeast-0.186region_northwest...
+              charges
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+
+kMeans
+======
+
+Number of iterations: 7
+Within cluster sum of squared errors: 610.2381461265481
+
+Initial starting points (random):
+
+Cluster 0: 2.877182,-0.893756,1.675189,-0.420168,-1.363249,0.546646,-0.700809,-0.186095,20984.0936
+Cluster 1: 0.120604,1.55558,1.870316,1.563574,0.918149,-0.633563,-0.116745,1.211761,5116.5004
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                                                                                                                         Cluster#
+Attribute                                                                                                    Full Data          0          1
+                                                                                                              (1338.0)    (531.0)    (807.0)
+============================================================================================================================================
+0.502smoker_yes-0.502smoker_no-0.481sex_female+0.481sex_male+0.13 region_southeast...                               -0      0.819    -0.5389
+-0.514sex_female+0.514sex_male+0.478smoker_no-0.478smoker_yes-0.086region_southeast...                              -0    -0.7028     0.4624
+-0.674region_southeast-0.52bmi+0.363region_northeast+0.322region_northwest-0.109smoker_no...                        -0     0.5871    -0.3863
+-0.726region_southwest+0.632region_northwest+0.223region_southeast-0.138region_northeast-0.037age...                -0    -0.1819     0.1197
+-0.736region_northeast+0.462region_southwest+0.437region_northwest-0.158region_southeast+0.135children...            0    -0.7733     0.5089
+0.761age+0.549children+0.238bmi+0.162region_northeast-0.157region_southeast...                                       0     0.1737    -0.1143
+-0.825children+0.513age+0.142bmi-0.141region_southeast+0.113region_northwest...                                      0     0.0148    -0.0098
+-0.803bmi+0.38 age+0.37 region_southeast-0.189region_northeast-0.186region_northwest...                             -0    -0.1353      0.089
+charges                                                                                                     13270.4223 20974.2093  8201.3876
+
+
+
+
+Time taken to build model (full training data) : 0 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0       531 ( 40%)
+1       807 ( 60%)
+

@@ -1,0 +1,184 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.InfoGainAttributeEval 
+Search:       weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N -1
+Relation:     mydata-weka.filters.unsupervised.attribute.Remove-R1
+Instances:    1080
+Attributes:   81
+              DYRK1A_N
+              ITSN1_N
+              BDNF_N
+              NR1_N
+              NR2A_N
+              pAKT_N
+              pBRAF_N
+              pCAMKII_N
+              pCREB_N
+              pELK_N
+              pERK_N
+              pJNK_N
+              PKCA_N
+              pMEK_N
+              pNR1_N
+              pNR2A_N
+              pNR2B_N
+              pPKCAB_N
+              pRSK_N
+              AKT_N
+              BRAF_N
+              CAMKII_N
+              CREB_N
+              ELK_N
+              ERK_N
+              GSK3B_N
+              JNK_N
+              MEK_N
+              TRKA_N
+              RSK_N
+              APP_N
+              Bcatenin_N
+              SOD1_N
+              MTOR_N
+              P38_N
+              pMTOR_N
+              DSCR1_N
+              AMPKA_N
+              NR2B_N
+              pNUMB_N
+              RAPTOR_N
+              TIAM1_N
+              pP70S6_N
+              NUMB_N
+              P70S6_N
+              pGSK3B_N
+              pPKCG_N
+              CDK5_N
+              S6_N
+              ADARB1_N
+              AcetylH3K9_N
+              RRP1_N
+              BAX_N
+              ARC_N
+              ERBB4_N
+              nNOS_N
+              Tau_N
+              GFAP_N
+              GluR3_N
+              GluR4_N
+              IL1B_N
+              P3525_N
+              pCASP9_N
+              PSD95_N
+              SNCA_N
+              Ubiquitin_N
+              pGSK3B_Tyr216_N
+              SHH_N
+              BAD_N
+              BCL2_N
+              pS6_N
+              pCFOS_N
+              SYP_N
+              H3AcK18_N
+              EGR1_N
+              H3MeK4_N
+              CaNA_N
+              Genotype
+              Treatment
+              Behavior
+              class
+Evaluation mode:    evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+
+Attribute Evaluator (supervised, Class (nominal): 81 class):
+	Information Gain Ranking Filter
+
+Ranked attributes:
+ 1.1547    33 SOD1_N
+ 0.9994    80 Behavior
+ 0.9978    79 Treatment
+ 0.9978    78 Genotype
+ 0.9538    47 pPKCG_N
+ 0.9256    11 pERK_N
+ 0.7786    77 CaNA_N
+ 0.7657     1 DYRK1A_N
+ 0.7402    21 BRAF_N
+ 0.5988    71 pS6_N
+ 0.5988    54 ARC_N
+ 0.5936     2 ITSN1_N
+ 0.5799    51 AcetylH3K9_N
+ 0.5702    66 Ubiquitin_N
+ 0.548     35 P38_N
+ 0.5447    43 pP70S6_N
+ 0.5399    18 pPKCAB_N
+ 0.4603     8 pCAMKII_N
+ 0.4465    49 S6_N
+ 0.4347    36 pMTOR_N
+ 0.4035    46 pGSK3B_N
+ 0.3941    57 Tau_N
+ 0.387     26 GSK3B_N
+ 0.3831    40 pNUMB_N
+ 0.3742    65 SNCA_N
+ 0.3508    16 pNR2A_N
+ 0.3413    61 IL1B_N
+ 0.3367    31 APP_N
+ 0.3015    20 AKT_N
+ 0.3009    74 H3AcK18_N
+ 0.2887    13 PKCA_N
+ 0.2676    56 nNOS_N
+ 0.2519    34 MTOR_N
+ 0.2499    10 pELK_N
+ 0.2498    39 NR2B_N
+ 0.2367    41 RAPTOR_N
+ 0.2342     6 pAKT_N
+ 0.2195    14 pMEK_N
+ 0.2187    12 pJNK_N
+ 0.2176    62 P3525_N
+ 0.2072    55 ERBB4_N
+ 0.1973    37 DSCR1_N
+ 0.1962    19 pRSK_N
+ 0.191     50 ADARB1_N
+ 0.1774     7 pBRAF_N
+ 0.1758    48 CDK5_N
+ 0.1685    67 pGSK3B_Tyr216_N
+ 0.1668    22 CAMKII_N
+ 0.1554    63 pCASP9_N
+ 0.154     38 AMPKA_N
+ 0.1513    44 NUMB_N
+ 0.1476    76 H3MeK4_N
+ 0.1432    59 GluR3_N
+ 0.1401    52 RRP1_N
+ 0.1363    64 PSD95_N
+ 0.128     42 TIAM1_N
+ 0.1161     5 NR2A_N
+ 0.1157     3 BDNF_N
+ 0.1152    75 EGR1_N
+ 0.1147    58 GFAP_N
+ 0.1136    15 pNR1_N
+ 0.1135    24 ELK_N
+ 0.1091    25 ERK_N
+ 0.1087     9 pCREB_N
+ 0.1085    27 JNK_N
+ 0.103      4 NR1_N
+ 0.092     69 BAD_N
+ 0.0887    60 GluR4_N
+ 0.0715    29 TRKA_N
+ 0.0706    17 pNR2B_N
+ 0.0624    68 SHH_N
+ 0.0623    73 SYP_N
+ 0.0614    45 P70S6_N
+ 0.06      23 CREB_N
+ 0.0589    72 pCFOS_N
+ 0.0586    70 BCL2_N
+ 0.053     30 RSK_N
+ 0.0502    32 Bcatenin_N
+ 0.0469    28 MEK_N
+ 0         53 BAX_N
+
+Selected attributes: 33,80,79,78,47,11,77,1,21,71,54,2,51,66,35,43,18,8,49,36,46,57,26,40,65,16,61,31,20,74,13,56,34,10,39,41,6,14,12,62,55,37,19,50,7,48,67,22,63,38,44,76,59,52,64,42,5,3,75,58,15,24,25,9,27,4,69,60,29,17,68,73,45,23,72,70,30,32,28,53 : 80
+

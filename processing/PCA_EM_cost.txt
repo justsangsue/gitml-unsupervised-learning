@@ -1,0 +1,82 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.EM -I 100 -N 2 -X 10 -max 2 -ll-cv 1.0E-6 -ll-iter 1.0E-6 -M 1.0E-6 -K 10 -num-slots 1 -S 100
+Relation:     mydata-weka.filters.unsupervised.attribute.Remove-R1_principal components-weka.filters.unsupervised.attribute.PrincipalComponents-R0.95-A5-M-1
+Instances:    1338
+Attributes:   9
+              0.502smoker_yes-0.502smoker_no-0.481sex_female+0.481sex_male+0.13 region_southeast...
+              -0.514sex_female+0.514sex_male+0.478smoker_no-0.478smoker_yes-0.086region_southeast...
+              -0.674region_southeast-0.52bmi+0.363region_northeast+0.322region_northwest-0.109smoker_no...
+              -0.726region_southwest+0.632region_northwest+0.223region_southeast-0.138region_northeast-0.037age...
+              -0.736region_northeast+0.462region_southwest+0.437region_northwest-0.158region_southeast+0.135children...
+              0.761age+0.549children+0.238bmi+0.162region_northeast-0.157region_southeast...
+              -0.825children+0.513age+0.142bmi-0.141region_southeast+0.113region_northwest...
+              -0.803bmi+0.38 age+0.37 region_southeast-0.189region_northeast-0.186region_northwest...
+              charges
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+
+EM
+==
+
+Number of clusters: 2
+Number of iterations performed: 4
+
+
+                                                                                                               Cluster
+Attribute                                                                                                            0          1
+                                                                                                                (0.24)     (0.76)
+==================================================================================================================================
+0.502smoker_yes-0.502smoker_no-0.481sex_female+0.481sex_male+0.13 region_southeast...
+  mean                                                                                                          -0.2045      0.065
+  std. dev.                                                                                                      1.4488     1.4764
+
+-0.514sex_female+0.514sex_male+0.478smoker_no-0.478smoker_yes-0.086region_southeast...
+  mean                                                                                                           0.2183    -0.0693
+  std. dev.                                                                                                      1.2662     1.3838
+
+-0.674region_southeast-0.52bmi+0.363region_northeast+0.322region_northwest-0.109smoker_no...
+  mean                                                                                                           0.0365    -0.0116
+  std. dev.                                                                                                      0.5518     1.3902
+
+-0.726region_southwest+0.632region_northwest+0.223region_southeast-0.138region_northeast-0.037age...
+  mean                                                                                                          -1.6946     0.5382
+  std. dev.                                                                                                      0.0688     0.7338
+
+-0.736region_northeast+0.462region_southwest+0.437region_northwest-0.158region_southeast+0.135children...
+  mean                                                                                                           1.0735    -0.3409
+  std. dev.                                                                                                       0.189      1.116
+
+0.761age+0.549children+0.238bmi+0.162region_northeast-0.157region_southeast...
+  mean                                                                                                          -0.1445     0.0459
+  std. dev.                                                                                                      1.0125     1.0335
+
+-0.825children+0.513age+0.142bmi-0.141region_southeast+0.113region_northwest...
+  mean                                                                                                           0.0765    -0.0243
+  std. dev.                                                                                                      1.0168      0.967
+
+-0.803bmi+0.38 age+0.37 region_southeast-0.189region_northeast-0.186region_northwest...
+  mean                                                                                                          -0.0128     0.0041
+  std. dev.                                                                                                      0.7535      0.903
+
+charges
+  mean                                                                                                       12196.4314 13611.5089
+  std. dev.                                                                                                  11386.5512 12305.4426
+
+
+
+Time taken to build model (full training data) : 0.04 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0       323 ( 24%)
+1      1015 ( 76%)
+
+
+Log likelihood: -22.17585
+
