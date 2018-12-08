@@ -10,7 +10,6 @@ All code is in the folder called emmm....
   |   processing
   |   results
   │   README.txt
-  │   jwang3013-analysis.pdf
 
 codes: contains python, R and jupyter note book codes for this assignment
 dataset: contains dataset used in this assignment, as well as processed data
